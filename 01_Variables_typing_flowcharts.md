@@ -77,6 +77,12 @@ $result = $int1 * $int2;  // $result = 32
 $result = $int2 / $int1;  // $result = 2
 $result = $int2 ** $int1; // $result = 4096
 $result = $int2 % $int1;  // $result = 0
+
+$int1 += $int2; //12
+$int1 -= $int2; //4
+$int1 *= $int2; //32
+$int1 /= $int2; //2
+$int1 %= $int2; //0
 ```
 
 ## Ввод и вывод данных
