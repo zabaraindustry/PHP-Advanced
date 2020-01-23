@@ -38,18 +38,18 @@ $file = fopen('file.txt', 'r+');
 Файл закрывается вызовом функции **`fclose()`**, принимающей единственным параметром хэндлер файла.
 
 ### Пример работы с файлами
-
+Задача. Перенести с файла counter.txt текст в файл file.txt. Вывести результат. Закрыть файл
 ```php
 //читаем файл в массив  
-$file_array = file("counter.txt");
+$file_array = file('counter.txt');
 //открытие файла
-$file = fopen('file.txt', r+);
+$file = fopen('file.txt', 'a+');
 //проверка, не закончился ли файл
-while (! feof($file)) {
-	//чтение из файла
-	$s = fgets($file);
-	echo $s;
-}
+//чтение из файла
+fwrite($file, $file_array[0]);
+$s = fgets($file);
+echo $s;
+
 //закрытие файла
 fclose($file);
 ```
