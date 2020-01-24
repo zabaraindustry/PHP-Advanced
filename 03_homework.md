@@ -24,10 +24,10 @@ function df($MySTR, $FILE = '/log/MyLog.txt'){ ………….
 Функция будет получать 4-ри параметра.
 - (‘ноутбук’, ‘ноутбука’, ‘ноутбуков’,  и какое-то число)
 ```php
-function units($first, $second, $thirdб $count = 1){……..
+function units($first, $second, $third, $count = 1){……..
 ```
 
-3.	Функция по Переводу даты месяца в полное название месяца.
+3. Функция по Переводу даты месяца в полное название месяца.
 Пример:
 ```php
 function EditData ($DATA){
