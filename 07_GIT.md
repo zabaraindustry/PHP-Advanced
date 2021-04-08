@@ -165,7 +165,6 @@ Git работает не с целыми файлами, и не со стро�
 ```
 git config --global user.name "username"
 ```
-
 ```
 git config --global user.email "usermail"
 ```
